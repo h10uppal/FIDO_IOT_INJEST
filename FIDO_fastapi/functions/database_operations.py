@@ -29,8 +29,8 @@ class DatabaseOperations:
             raise (f"ERROR: Unexpected database error. {ex}")
 
     def close_cursor(self):
-        self.cursor.close
+        self.cursor.close()
 
     def close_instance(self):
-        self.cursor.close
+        self.cursor.close()
         self.connection.close()
